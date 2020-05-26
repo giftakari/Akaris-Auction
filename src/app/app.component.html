@@ -1,9 +1,23 @@
-<h1>Angular Router App</h1>
+<app-navbar></app-navbar>
 <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-<nav>
-  <ul>
-    <li><a routerLink="/home" routerLinkActive="active">First Component</a></li>
-  </ul>
-</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <app-search></app-search>
+    </div>
+    <div class="col-md-9">
+      <router-outlet>
+        <div class="row carousel-holder">
+          <div class="col-md-12">
+            <app-carousel></app-carousel>
+          </div>
+        </div>
+        <div class="row">
+          We'll render several ProductItem components here
+        </div>
+      </router-outlet>
+    </div>
+  </div>
+</div>
 
-<router-outlet></router-outlet>
+<app-footer></app-footer>
