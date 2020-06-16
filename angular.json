@@ -19,12 +19,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/material-icons/material-design-icons.min.css",
-              "src/styles.css"
-            ],
+            "assets": ["src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
